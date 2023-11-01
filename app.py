@@ -24,8 +24,6 @@ class ImageReader(nn.Module):
             nn.Linear(512, 512),
             nn.ReLU(),
             #Outputs 10 labels model is trying to predict.
-            #For example, if user supplies 'cat' images, will
-            #result in label 'cat'.
             nn.Linear(512, 10),
         )
 
